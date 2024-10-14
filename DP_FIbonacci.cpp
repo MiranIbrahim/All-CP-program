@@ -12,7 +12,9 @@ ll fibo_recursive_top_down(int n){
     if(dp[n] != -1){
         return dp[n];
     }
-    return dp[n]= fibo_recursive_top_down(n-1)+fibo_recursive_top_down(n-2);
+    int ans = fibo_recursive_top_down(n-1)+fibo_recursive_top_down(n-2);
+    dp[n] = ans;
+    return ans;
 }
 
 ll fibo_loop_bottom_up(int n){

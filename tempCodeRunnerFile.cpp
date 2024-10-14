@@ -1,3 +1,2 @@
-if(grid[ci][cj] != 'D'){
-                grid[ci][cj] = 'X';
-            }
+
+// cout << "tpDown: " << subSetSum_topDown(n, s) << endl;
